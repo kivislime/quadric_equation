@@ -19,7 +19,7 @@ SRC_DIR := src
 REPORT_DIR := report
 DOC_DIR := doc
 
-all: clean static
+all: static
 
 static: lquadratic.a
 
