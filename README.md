@@ -7,7 +7,7 @@ This module provides a function to solve quadratic equations of the form ax^2 + 
 To use this module, simply clone the repository and include the `quadratic_equation.h` header file in your project:
 
 ```bash
-git clone https://github.com/kivislime/quadratic-equation.git
+git clone git@github.com:kivislime/quadric_equation.git
 ```
 ## Usage
 
