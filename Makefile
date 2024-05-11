@@ -28,7 +28,7 @@ lquadratic.a: $(OBJS)
 	ranlib $@
 	-rm -rf $(SRC_DIR)/*.o
 
-test: lquadratic.a
+check: lquadratic.a
 	$(CC) $(CFLAGS) $(TESTS) lquadratic.a $(FLAG_TEST) -o  $(TESTS_DIR)/test -g
 	./$(TESTS_DIR)/test
 
@@ -51,8 +51,8 @@ clean:
 	-rm -rf $(REPORT_DIR)
 	-rm -rf $(DOC_DIR)
 
-check:
+clang_check:
 	clang-format -style=Google -n $$(find . -name '*.c' -o -name '*.h')
 
-format:
+clang_format:
 	clang-format -style=Google -i $$(find . -name '*.c' -o -name '*.h')
